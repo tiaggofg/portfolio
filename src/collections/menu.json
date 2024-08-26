@@ -1,0 +1,14 @@
+[
+	{
+		"name": "Página Inicial",
+		"url": "/"
+	},
+	{
+		"name": "Projetos",
+		"url": "#projects"
+	},
+	{
+		"name": "Sobre",
+		"url": "/about"
+	}
+]
