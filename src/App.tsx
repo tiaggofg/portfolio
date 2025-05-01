@@ -11,7 +11,7 @@ function App() {
     <>
       <div className="relative w-full min-h-screen overflow-hidden">
         <SquareLines />
-        <div className="flex flex-col w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0 gap-2">
+        <div className="flex flex-col w-full max-w-4xl mx-auto mt-16 px-5 md:mt-24 lg:mt-32 xl:px-0 gap-2">
           <div className="flex flex-col items-center md:flex-row">
             <div className="relative w-full md:w-1/2 flex flex-col gap-2">
               <div>
@@ -94,12 +94,15 @@ function App() {
                         rel="noopener noreferrer"
                         className="hover:underline"
                       >
-                        {edu.institution}
+                        <span className="block md:hidden">{edu.shortName}</span>
+                        <span className="hidden md:block">
+                          {edu.institution} ({edu.shortName})
+                        </span>
                       </a>
                     </h3>
-                    <span className="text-sm font-medium bg-neutral-200 p-1 rounded-sm max-h-min">
+                    <div className="self-center text-xs md:text-sm lg:text-sm font-medium bg-neutral-200 p-0.5 md:p-1 lg:p-1 rounded-sm max-h-min">
                       {edu.status}
-                    </span>
+                    </div>
                   </div>
                   <span className="text-gray-500 p-1 tabular-nums">
                     {edu.startDate} - {edu.endDate}
@@ -159,7 +162,7 @@ function App() {
             <h2 className="text-2xl font-bold leading-tight md:text-2xl lg:text-2xl">
               Projetos e contribuições
             </h2>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-2">
               {projects.map((project) => (
                 <div
                   className="flex flex-col border border-neutral-200 rounded-lg p-3 gap-2"

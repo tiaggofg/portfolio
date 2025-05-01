@@ -1,14 +1,16 @@
 export const education = [
   {
-    institution: "Centro Universitário Leonardo da Vinci (UNIASSELVI)",
+    shortName: "Uniasselvi",
+    institution: "Centro Universitário Leonardo da Vinci",
     site: "https://portal.uniasselvi.com.br",
     degree: "Bacharel em Análise e Desenvolvimento de Sistemas",
     status: "Matriculado",
     startDate: "2024",
-    endDate: "Atualmente",
+    endDate: "atual",
   },
   {
-    institution: "Instituto Federal Catarinense (IFC)",
+    shortName: "IFC",
+    institution: "Instituto Federal Catarinense",
     site: "https://ifc.edu.br",
     degree: "Licenciatura em Física",
     status: "Interrompido",
