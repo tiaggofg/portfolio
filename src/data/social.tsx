@@ -1,0 +1,45 @@
+import {
+  EnvelopeSimple,
+  GithubLogo,
+  InstagramLogo,
+  LinkedinLogo,
+} from "@phosphor-icons/react";
+
+export const socialMedias = [
+  {
+    icon: (
+      <EnvelopeSimple
+        className="hover:opacity-100 opacity-50 cursor-pointer"
+        size={28}
+      />
+    ),
+    url: "mailto:tiago.fernandes.godoy@gmail.com",
+  },
+  {
+    icon: (
+      <GithubLogo
+        className="hover:opacity-100 opacity-50 cursor-pointer"
+        size={28}
+      />
+    ),
+    url: "https://github.com/tiaggofg",
+  },
+  {
+    icon: (
+      <LinkedinLogo
+        className="hover:opacity-100 opacity-50 cursor-pointer"
+        size={28}
+      />
+    ),
+    url: "https://linkedin.com/in/tiaggofg",
+  },
+  {
+    icon: (
+      <InstagramLogo
+        className="hover:opacity-100 opacity-50 cursor-pointer"
+        size={28}
+      />
+    ),
+    url: "https://www.instagram.com/tiaggofg",
+  },
+];
