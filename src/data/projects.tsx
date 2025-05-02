@@ -3,7 +3,7 @@ export const projects = [
     name: "Serviço de Prevenção de Fraude",
     site: "https://sentynela.com.br",
     description:
-      "Fui responsável pela reestruturação da arquitetura para garantir escalabilidade e resiliência, utilizando Docker, mensageria com RabbitMQ e integração com serviços antifraude de terceiros. Também atuei em melhorias de segurança e organização do código.",
+      "Liderei a reestruturação da arquitetura para garantir escalabilidade e resiliência, utilizando Docker, mensageria com RabbitMQ e integração com serviços antifraude de terceiros. Também atuei em melhorias de segurança e organização do código.",
     role: "Desenvolvedor Full stack líder",
     stacks: [
       "Java 11",
@@ -21,7 +21,7 @@ export const projects = [
     name: "Serviço de Impressão Remota",
     site: "https://printrouter.magazord.com.br",
     description:
-      "Sistema de impressão remota criado para substituir uma solução de terceiros. Desenvolvi uma aplicação desktop em Java que se comunica com o backend via RabbitMQ e WebSocket, permitindo o envio de documentos para impressoras com suporte a múltiplos formatos e instalação automatizada.",
+      "Aplicação criada para substituir uma solução de terceiros. Atuei no desenvolvimento de uma aplicação desktop em Java que se comunica com o backend via RabbitMQ e WebSocket, permitindo o envio de documentos para impressoras com suporte a múltiplos formatos e instalação automatizada.",
     role: "Desenvolvedor Full stack",
     stacks: [
       "Java 17",
