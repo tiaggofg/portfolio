@@ -11,16 +11,18 @@ function App() {
     <>
       <div className="relative w-full min-h-screen overflow-hidden">
         <SquareLines />
-        <div className="flex flex-col w-full max-w-4xl mx-auto mt-16 px-5 md:mt-24 lg:mt-32 xl:px-0 gap-2">
-          <div className="flex flex-col items-center md:flex-row">
-            <div className="relative w-full md:w-1/2 flex flex-col gap-2">
+        <div className="flex flex-col w-full max-w-4xl mx-auto mt-16 px-5 md:mt-24 lg:mt-26 xl:px-0 gap-2">
+          <div className="flex flex-col md:flex-row justify-between">
+            <div className="relative md:w-full flex flex-col gap-2">
               <div>
-                <h1 className="text-3xl font-bold leading-tight md:text-4xl lg:text-3xl">
+                <h1 className="text-3xl font-bold leading-tight">
                   Tiago Fernandes de Godoy
                 </h1>
-                <p className="py-2 text-base text-neutral-600">
-                  Desenvolvedor Backend Java especializado em transformar ideias
-                  em aplicações escaláveis e robustas.
+                <p className="py-2 text-sm text-pretty text-neutral-600">
+                  Engenheiro de Software Pleno focado em desenvolver soluções
+                  escaláveis e sustentáveis. Aprecia boas práticas de design de
+                  código e busca clareza tanto no desenvolvimento quanto na
+                  comunicação.
                 </p>
                 <div className="flex gap-2">
                   {socialMedias.map((social) => (
@@ -35,25 +37,15 @@ function App() {
                   ))}
                 </div>
               </div>
-              <h2 className="text-2xl mt-5 font-bold leading-tight md:text-2xl lg:text-2xl">
-                Sobre
-              </h2>
-              <p className="text-base text-neutral-600">
-                Como desenvolvedor de software, tenho uma sólida experiência em
-                arquitetar e desenvolver aplicações robustas e escaláveis
-                utilizando Java. Com um forte foco em boas práticas de
-                engenharia de software, busco criar soluções que são
-                sustentáveis e de fácil manutenção ao longo do tempo
-              </p>
             </div>
-            <div className="relative justify-end hidden w-full mt-10 md:flex md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0">
+            <div className="relative hidden md:flex">
               <div className="relative z-50 w-full">
                 <div className="relative z-30 pl-10">
                   <img
                     alt="Foto do Tiago Godoy"
                     src="https://avatars.githubusercontent.com/u/84431015"
                     decoding="auto"
-                    className="relative z-30 w-[832px] h-auto mx-auto dark:-translate-y-0.5 rounded-lg"
+                    className="relative z-30 lg:w-[150px] md:w-[175px] h-auto rounded-lg"
                   />
                 </div>
               </div>
@@ -61,7 +53,22 @@ function App() {
           </div>
 
           <section className="flex flex-col gap-2">
-            <h2 className="text-2xl font-bold leading-tight md:text-2xl lg:text-2xl">
+            <h2 className="text-2xl mt-5 font-bold leading-tight md:text-2xl lg:text-2xl">
+              Sobre
+            </h2>
+            <p className="text-sm text-pretty text-neutral-600">
+              Como engenheiro de software, liderei iniciativas técnicas como a
+              migração de um sistema antifraude para um arquitetura escalável e
+              resiliente, a criação de uma ferramenta de impressão remota e a
+              implementação de um otimizador logístico baseado em heurísticas.
+              Possuo sólida experiência em backend, atuando principalmente com
+              Java, mas também com passagem por tecnologias como PHP,
+              TypeScript, MongoDB e React.
+            </p>
+          </section>
+
+          <section className="flex flex-col gap-2">
+            <h2 className="text-2xl mt-5 font-bold leading-tight md:text-2xl lg:text-2xl">
               Tecnologias
             </h2>
 
@@ -119,43 +126,45 @@ function App() {
             <h2 className="text-2xl font-bold leading-tight md:text-2xl lg:text-2xl">
               Experiência
             </h2>
-            {experiences.map((exp) => (
-              <div key={exp.position} className="flex flex-col">
-                <div className="flex gap-1 justify-between">
-                  <div className="flex gap-1">
-                    <h3 className="text-lg font-semibold">
-                      <a
-                        href={exp.site}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline"
-                      >
-                        {exp.company}
-                      </a>
-                    </h3>
+            <div className="flex flex-col gap-5">
+              {experiences.map((exp) => (
+                <div key={exp.position} className="flex flex-col">
+                  <div className="flex gap-1 justify-between">
+                    <div className="flex gap-1">
+                      <h3 className="text-lg font-semibold">
+                        <a
+                          href={exp.site}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                        >
+                          {exp.company}
+                        </a>
+                      </h3>
+                    </div>
+                    <span className="text-gray-500 p-1 tabular-nums text-nowrap">
+                      {exp.periodo}
+                    </span>
                   </div>
-                  <span className="text-gray-500 p-1 tabular-nums">
-                    {exp.periodo}
-                  </span>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <h4 className="text-base font-normal">{exp.position}</h4>
-                  <p className="justify-self-end text-sm text-neutral-600">
-                    {exp.description}
-                  </p>
-                  <div className="flex flex-wrap gap-1 mb-4">
-                    {exp.stacks.map((stack) => (
-                      <span
-                        className="inline-flex gap-1 py-1 px-3 bg-neutral-200 rounded-md items-center"
-                        key={stack}
-                      >
-                        <span className="text-xs font-semibold">{stack}</span>
-                      </span>
-                    ))}
+                  <div className="flex flex-col gap-1">
+                    <h4 className="text-base font-normal">{exp.position}</h4>
+                    <p className="justify-self-end text-sm text-neutral-600">
+                      {exp.description}
+                    </p>
+                    <div className="flex flex-wrap gap-1">
+                      {exp.stacks.map((stack) => (
+                        <span
+                          className="inline-flex gap-1 py-1 px-3 bg-neutral-200 rounded-md items-center"
+                          key={stack}
+                        >
+                          <span className="text-xs font-semibold">{stack}</span>
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </section>
 
           <section className="flex flex-col mt-5 gap-2">
@@ -183,7 +192,7 @@ function App() {
                       project.name
                     )}
                   </h3>
-                  <p className="justify-self-end text-sm text-neutral-600">
+                  <p className="justify-self-end text-sm text-pretty text-neutral-600">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-1">
