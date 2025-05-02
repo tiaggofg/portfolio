@@ -10,7 +10,7 @@ export const socialMedias = [
     icon: (
       <EnvelopeSimple
         className="hover:opacity-100 opacity-50 cursor-pointer"
-        size={28}
+        size={25}
       />
     ),
     url: "mailto:tiago.fernandes.godoy@gmail.com",
@@ -19,7 +19,7 @@ export const socialMedias = [
     icon: (
       <GithubLogo
         className="hover:opacity-100 opacity-50 cursor-pointer"
-        size={28}
+        size={25}
       />
     ),
     url: "https://github.com/tiaggofg",
@@ -28,7 +28,7 @@ export const socialMedias = [
     icon: (
       <LinkedinLogo
         className="hover:opacity-100 opacity-50 cursor-pointer"
-        size={28}
+        size={25}
       />
     ),
     url: "https://linkedin.com/in/tiaggofg",
@@ -37,7 +37,7 @@ export const socialMedias = [
     icon: (
       <InstagramLogo
         className="hover:opacity-100 opacity-50 cursor-pointer"
-        size={28}
+        size={25}
       />
     ),
     url: "https://www.instagram.com/tiaggofg",
