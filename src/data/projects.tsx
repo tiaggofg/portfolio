@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     name: "Serviço de Impressão Remota",
-    site: "https://printrouter.magazord.com.br",
+    site: "https://docs.printrouter.magazord.com.br",
     description:
       "Aplicação criada para substituir uma solução de terceiros. Atuei no desenvolvimento de uma aplicação desktop em Java que se comunica com o backend via RabbitMQ e WebSocket, permitindo o envio de documentos para impressoras com suporte a múltiplos formatos e instalação automatizada.",
     role: "Desenvolvedor Full stack",
