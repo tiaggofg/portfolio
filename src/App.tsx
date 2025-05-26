@@ -19,10 +19,10 @@ function App() {
                   Tiago Fernandes de Godoy
                 </h1>
                 <p className="py-2 text-sm text-pretty text-neutral-600">
-                  Engenheiro de Software Pleno focado em desenvolver soluções
-                  escaláveis e sustentáveis. Aprecia boas práticas de design de
-                  código e busca clareza tanto no desenvolvimento quanto na
-                  comunicação.
+                  Sou Desenvolvedor de Software Pleno focado em desenvolver
+                  soluções escaláveis e sustentáveis. Aprecio boas práticas de
+                  design de código e busco clareza tanto no desenvolvimento
+                  quanto na comunicação.
                 </p>
                 <div className="flex gap-2">
                   {socialMedias.map((social) => (

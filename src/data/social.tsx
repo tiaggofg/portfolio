@@ -13,7 +13,7 @@ export const socialMedias = [
         size={25}
       />
     ),
-    url: "mailto:tiago.fernandes.godoy@gmail.com",
+    url: "mailto:dev@tiagogodoy.online",
   },
   {
     icon: (
